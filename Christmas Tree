@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int heigh;
+  do
+    {
+    printf("Please, input heigh value (from 1 to 10) for beauty: ");
+    scanf("%i",&heigh);
+    }
+  while(heigh > 10 || heigh < 1);
+    if(heigh <= 10)
+    {
+        for (int i = 0; i < heigh; i++)
+            {
+            for(int k = 10; k > i; k--)
+                {
+                printf(" ");
+                }
+            for (int j = 0; j < i; j++)
+                {
+                printf("#");
+                }
+                printf("#"); //tree trunk
+            for (int j = 0; j < i; j++)
+                {
+                printf("#");
+                }
+            printf("\n");
+            }
+            for(int k = 10; k > 0; k--)
+                {
+                printf(" ");
+                }
+            printf("#"); //tree trunk
+    }
+    printf("\n");
+}
